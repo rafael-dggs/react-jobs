@@ -28,6 +28,7 @@ const JobListings = ({ isHome = false }) => {
           {isHome ? "Recent Jobs" : "Browse Jobs"}
         </h2>
         {/* qualquer coisa */}
+        {/* qualquer coisa */}
         {loading ? (
           <Spinner loading />
         ) : (
