@@ -11,7 +11,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
   const [salary, setSalary] = useState(job.salary);
   const [companyName, setCompanyName] = useState(job.company.name);
   const [companyDescription, setCompanyDescription] = useState(
-    job.company.description
+    job.company.description,
   );
   const [contactEmail, setContactEmail] = useState(job.company.contactEmail);
   const [contactPhone, setContactPhone] = useState(job.company.contactPhone);
@@ -45,7 +45,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
         <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
           <form onSubmit={submitForm}>
             <h2 className="text-3xl text-center font-semibold mb-6">
-              Update Job
+              Atualizar Vaga
             </h2>
 
             <div className="mb-4">
@@ -53,7 +53,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
                 htmlFor="type"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Job Type
+                Tipo de emprego
               </label>
               <select
                 id="type"
@@ -63,16 +63,16 @@ const EditJobPage = ({ updateJobSubmit }) => {
                 value={type}
                 onChange={(e) => setType(e.target.value)}
               >
-                <option value="Full-Time">Full-Time</option>
-                <option value="Part-Time">Part-Time</option>
-                <option value="Remote">Remote</option>
-                <option value="Internship">Internship</option>
+                <option value="Full-Time">Integral</option>
+                <option value="Part-Time">Meio-período</option>
+                <option value="Remote">Remoto</option>
+                <option value="Internship">Estágio</option>
               </select>
             </div>
 
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Job Listing Name
+                Nome da listagem de vaga
               </label>
               <input
                 type="text"
@@ -90,7 +90,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
                 htmlFor="description"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Description
+                Descrição
               </label>
               <textarea
                 id="description"

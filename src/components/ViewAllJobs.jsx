@@ -6,7 +6,7 @@ const ViewAllJobs = () => {
         to="/jobs"
         className="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
       >
-        View All Jobs
+        Ver todas as vagas
       </Link>
     </section>
   );

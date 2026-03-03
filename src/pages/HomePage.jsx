@@ -7,8 +7,8 @@ const HomePage = () => {
   return (
     <>
       <Hero
-        title="Become a React Dev"
-        subtitle="Find the React job that fits your skills and needs"
+        title="Se torne um desenvolvedor React"
+        subtitle="Encontre o emprego em React que combine com suas habilidades"
       />
       <HomeCards />
       <JobListings isHome={true} />
